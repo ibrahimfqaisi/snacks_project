@@ -1,9 +1,9 @@
 
 from rest_framework import serializers
-from .models import Snack
+from .models import Meal
 
 class SnackSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Snack
+        model = Meal
         fields =['id','owner', 'title', 'desc']
         # fields = '__all__'
